@@ -6,7 +6,16 @@ namespace DelegatesExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var myDelegate = new MyDelegateExample();
+            myDelegate.Show();
+
+            var actionDelegate = new ActionExample();
+            actionDelegate.Show();
+
+            var func = new DelegateAsTransformerExample();
+            func.Show();
+
+            Console.ReadKey();
         }
     }
 }
